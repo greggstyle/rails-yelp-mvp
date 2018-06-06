@@ -1,0 +1,22 @@
+
+<div class ="container">
+
+  <div class="row">
+    <div class="col-sm-offset-2 col-sm-10">
+      <h1 class: "h1"> Restaurants </h1>
+
+      <ul>
+        <li> <%= @restaurant.name %></li>
+        <li> <%= @restaurant.category %></li>
+        <li> <%= @restaurant.address %></li>
+        <li> <%= @restaurant.phone_number %></li>
+      </ul>
+
+<%= link_to "back to restaurant", restaurants_path, class: 'btn btn-info'%>
+<%= link_to "Add a review ", new_restaurant_review_path(@restaurant), class: "btn btn-success " %>
+
+
+</div>
+</div>
+</div>
+
